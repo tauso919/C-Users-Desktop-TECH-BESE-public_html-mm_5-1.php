@@ -26,9 +26,9 @@
     </form>
 
     <?php
-    $dsn = 'mysql:dbname=tb250212db;host=localhost';
-    $user = 'tb-250212';
-    $password = 'KYV2bca3Mg';
+    $dsn = 'mysql:dbname=データベース名;host=localhost';
+    $user = 'ユーザー名';
+    $password = 'パスワード名';
     $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 
     if (isset($_POST['password_post_id']) && isset($_POST['new_post'])) {
